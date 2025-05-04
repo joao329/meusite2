@@ -3,30 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <title>Site em Manutenção</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      background-color: #f2f2f2;
-      text-align: center;
+      background-color: #FFF;
       font-family: Arial, sans-serif;
-      padding-top: 50px;
+      text-align: center;
+      padding: 20px;
     }
-    img {
-      max-width: 450px;
-      height: auto;
+
+    .container {
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
     }
-    h1 {
-      color: #333;
-      margin-top: 20px;
+
+    .container img {
+      width: 100%;       /* Ocupa toda a largura da tela até 400px */
+      height: auto;      /* Mantém a proporção */
+      display: block;
     }
+
     p {
+      margin-top: 20px;  /* Exatamente 20px abaixo da imagem */
       color: #666;
       font-size: 18px;
     }
   </style>
 </head>
 <body>
-  <img src="manutencao.jpg">
-  <h1>Nosso site está em manutenção.</h1>
-  <p>Desculpe pelo inconveniente. Volte novamente em breve.</p>
+  <div class="container">
+    <img src="manutencao-mix123.png" alt="Site em manutenção">
+  </div>
+  <p>Volte novamente em breve. Obrigado!</p>
 </body>
 </html>
